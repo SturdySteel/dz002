@@ -47,7 +47,7 @@ int main()
     }*/
 
     PhoneBook a[2];
-    cout << a[0].getFN()->getSurname() << ' ';// << a->getName() << ' ' << a->getPatronomic() << '\n';
+    cout << a[1].getFN()->getSurname() << ' ';// << a->getName() << ' ' << a->getPatronomic() << '\n';
     MenuPB menu;        
     
 

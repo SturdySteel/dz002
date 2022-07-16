@@ -1,10 +1,11 @@
 #include "PhoneBook.h"
 
-PhoneBook::PhoneBook() : PhoneBook(rec, id, 0, 0, 0, "") {}
-PhoneBook::PhoneBook(FullName* rec) : PhoneBook(rec, id, 0, 0, 0, "") {}
-PhoneBook::PhoneBook(FullName* rec = nullptr, const int id, int cellNum, int homeNum, int workNum, string otherInfo) : id(idS)
+PhoneBook::PhoneBook() : PhoneBook(rec, 0, 0, 0, "") {}
+PhoneBook::PhoneBook(FullName* rec) : PhoneBook(rec, 0, 0, 0, "") {}
+PhoneBook::PhoneBook(FullName* rec, int cellNum, int homeNum, int workNum, string otherInfo) : 
+	id{ idS }
 {
-	this->rec = rec == nullptr ? new FullName() : rec;	
+	this->rec = this->rec == nullptr ? new FullName() : rec;	
 	setCellNum(cellNum);
 	setHomeNum(homeNum);
 	setWorkNum(workNum);

@@ -15,7 +15,7 @@ class PhoneBook
 {
 private:	
 	const int id;
-	FullName* rec;
+	FullName* rec{ nullptr };
 	int cellNum;
 	int homeNum;
 	int workNum;
@@ -24,7 +24,7 @@ private:
 public:
 	PhoneBook(); 
 	PhoneBook(FullName* rec); 
-	PhoneBook(FullName* rec, const int id, int cellNum, int homeNum, int workNum, string otherInfo);
+	PhoneBook(FullName* rec, int cellNum, int homeNum, int workNum, string otherInfo);
 	
 	~PhoneBook();
 	
