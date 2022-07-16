@@ -13,10 +13,36 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\class">
+      <UniqueIdentifier>{87abcc3a-1009-4185-b5c9-68ce0efe3857}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\class">
+      <UniqueIdentifier>{4d98fbd8-0207-4a77-849c-02034cb76983}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="20220710_DZ_002.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FullName.cpp">
+      <Filter>Source Files\class</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuPB.cpp">
+      <Filter>Source Files\class</Filter>
+    </ClCompile>
+    <ClCompile Include="PhoneBook.cpp">
+      <Filter>Source Files\class</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FullName.h">
+      <Filter>Header Files\class</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuPB.h">
+      <Filter>Header Files\class</Filter>
+    </ClInclude>
+    <ClInclude Include="PhoneBook.h">
+      <Filter>Header Files\class</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

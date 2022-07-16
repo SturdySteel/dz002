@@ -128,6 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="20220710_DZ_002.cpp" />
+    <ClCompile Include="FullName.cpp" />
+    <ClCompile Include="MenuPB.cpp" />
+    <ClCompile Include="PhoneBook.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FullName.h" />
+    <ClInclude Include="MenuPB.h" />
+    <ClInclude Include="PhoneBook.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
