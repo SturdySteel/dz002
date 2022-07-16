@@ -1,8 +1,8 @@
 #include "PhoneBook.h"
 
-PhoneBook::PhoneBook() : PhoneBook(rec, 0, 0, 0, "") {}
-PhoneBook::PhoneBook(FullName* rec) : PhoneBook(rec, 0, 0, 0, "") {}
-PhoneBook::PhoneBook(FullName* rec, int cellNum, int homeNum, int workNum, string otherInfo) : 
+PhoneBook::PhoneBook() : PhoneBook(rec, "", "", "", "") {}
+PhoneBook::PhoneBook(FullName* rec) : PhoneBook(rec, "", "", "", "") {}
+PhoneBook::PhoneBook(FullName* rec, string cellNum, string homeNum, string workNum, string otherInfo) :
 	id{ idS }
 {
 	this->rec = this->rec == nullptr ? new FullName() : rec;	
@@ -15,7 +15,7 @@ PhoneBook::PhoneBook(FullName* rec, int cellNum, int homeNum, int workNum, strin
 
 PhoneBook::~PhoneBook()
 {
-	cout << "destr\n";
+	//cout << "destr\n";
 	delete rec;
 }
 
@@ -34,17 +34,17 @@ int PhoneBook::getID()
 	return id;
 }
 
-int PhoneBook::getCellNum()
+string PhoneBook::getCellNum()
 {
 	return cellNum;
 }
 
-int PhoneBook::getHomeNum()
+string PhoneBook::getHomeNum()
 {
 	return homeNum;
 }
 
-int PhoneBook::getWorkNum()
+string PhoneBook::getWorkNum()
 {
 	return workNum;
 }
@@ -69,17 +69,17 @@ void PhoneBook::setPatronomic(string patronymic)
 	rec->setPatronomicF(patronymic);
 }
 
-void PhoneBook::setCellNum(int cellNum)
+void PhoneBook::setCellNum(string cellNum)
 {
 	this->cellNum = cellNum;
 }
 
-void PhoneBook::setHomeNum(int homeNum)
+void PhoneBook::setHomeNum(string homeNum)
 {
 	this->homeNum = homeNum;
 }
 
-void PhoneBook::setWorkNum(int workNum)
+void PhoneBook::setWorkNum(string workNum)
 {
 	this->workNum = workNum;
 }

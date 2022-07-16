@@ -3,43 +3,37 @@
 #include <string>
 #include <windows.h>
 #include <fstream>
-#define MENUPB
+#include "PhoneBook.h"
 
 using namespace std;
-
-#ifdef MENUPB
 
 class MenuPB
 {
 private:
-	static const int numMM{ 3 };
-	static const int numMR{ 4 };
+	static const int numMM{ 4 };
+	static const int numMR{ 7 };
+	static const int numMF{ 3 };
 	int idRec;
 	int cMenu;	
-	string arrMenuMain[numMM]{
-		"1. Отобразить список контактов",
-		"2. Поиск контакта",
-		"3. Завершение работы" };
-	string arrMenuRec[numMR]{
-		"1. Отобразить контакт",
-		"2. Добавление контакта",
-		"3. Удаление контакта",
-		"4. Возврат" };
+	string arrMenuMain[numMM];
+	string arrMenuRec[numMR];
+	string arrMenuFile[numMF];
+	PhoneBook* dB;
+
+public:
+
+	MenuPB(PhoneBook* dB);
+	~MenuPB();
 
 private:
 
 	void clearScreen(int pause);
 	void showMessage(string mess, int pause);
+	void pressAnyKey();
+	void selMenuM();
+	void selMenuR();
+	void selMenuF();
+	int showMenu(string* arr, int m_count);
+	void showRecord(PhoneBook* dBi);
 
-public:
-	
-	MenuPB();
-	~MenuPB();
-
-private:
-
-	void selMenuM();	
-	int showMenu(string* arr, int m_count);	
 };
-#endif // MENUPB
-

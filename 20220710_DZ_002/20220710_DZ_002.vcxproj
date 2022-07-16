@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="20220710_DZ_002.cpp" />
     <ClCompile Include="FullName.cpp" />
+    <ClCompile Include="GenDB.cpp" />
     <ClCompile Include="MenuPB.cpp" />
     <ClCompile Include="PhoneBook.cpp" />
   </ItemGroup>

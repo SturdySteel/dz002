@@ -1,8 +1,5 @@
 #pragma once
 #include<string>
-#define FULLNAME
-
-#ifdef FULLNAME
 
 using namespace std;
 
@@ -28,5 +25,3 @@ public:
 	void setPatronomicF(string patronymic);
 
 };
-
-#endif // FULLNAME
